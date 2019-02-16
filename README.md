@@ -14,7 +14,7 @@ This Can be directly deployed on heroku for getting self notifications to your m
 3. Type <b>$heroku login</b> in the terminal.
 4. Go to the project folder using cd.
 5. clone the git location for commiting ur app by command <b>$heroku git:clone -a appname</b>
-6. <b>$git add.</b>
+6. <b>$git add .</b>
 7. <b>$git commit -am "Inital commits"</b>
 8. <b>$git push heroku master </b>
 9. <b>$heroku ps:scale worker=1 </b>
