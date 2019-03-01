@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Placements Notification</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="icon" type="image/ico" href="static/pics/email.png"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    <body>
+        <div id="main-body" class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12"> 
+                <div id="content">
+                    <h1 id="heading">Registration for Placements Notification</h1>
+                    <p class="paraContent">
+                        An application to send the updates of placements notifications.
+                    </p>
+
+                    
+                    <h4 id="team-oss">
+                        Made with Love | Team OSS
+                    </h4>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <form id="form-body" method="POST" >
+                     <h2 id="RegisterHeading">Register</h2>
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        {{ form.reg_id.label }}{{ form .reg_id(class="form-control") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.email.label }}{{ form.email(class="form-control") }}
+                    </div>
+
+                     {{ form.submit(class="btn btn-default") }}
+                  {% with messages = get_flashed_messages() %}
+                 {% if messages %}
+                  <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+

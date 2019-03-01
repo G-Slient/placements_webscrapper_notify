@@ -1,0 +1,123 @@
+body{
+    background-image: linear-gradient( #C70039 , #FF5733 );
+    /* background-image: linear-gradient(#00ADEE,#652C90); */
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#form-body{
+    background-color: white;
+    margin: 15%;
+    margin-top: 10%;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 3px 3px black;
+}
+
+#RegisterHeading{
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 7%;
+    text-shadow: 1px 1px #C70039;
+}
+
+#team-oss{
+    text-align: center;
+    color: black;
+    margin-top: 8%;
+}
+
+#content{
+    margin: 5%;
+    padding: 5%;
+}
+
+#heading{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px black;
+    font-weight: bolder;
+    
+}
+
+#thankyou-heading{
+    color:white;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 2px 2px black;
+}
+
+#error-heading{
+    color:white;
+    font-size: 6rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 2px 2px black;
+}
+
+.errorContent{
+    background-color: white;
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 5%;
+    padding:4%;
+    font-size: 17px;
+    border-radius:10px;
+    box-shadow: 3px 2px black;
+}
+
+#stack-trace{
+    padding: 1%;
+    background-color: rgb(178, 187, 189);
+    border-radius:5px;
+    color:#C70039;
+    margin: 2%;
+    font-size: 15px;
+}
+
+#chill-message{
+    color:white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#contact-message{
+    position: absolute;
+    color:white;
+    left: 30%;
+    bottom:5%;
+}
+
+ul{
+    margin-top: 5%;
+}
+
+li{
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    padding-left: 5%;
+}
+
+.paraContent{
+    font-size: 2rem;
+    padding: 5%;
+    padding-left: 10%;
+    color: black;
+}
+
+input {
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+}
