@@ -22,7 +22,7 @@ def login_website(username,password):
         soup =BeautifulSoup(r.content,'html.parser')
         r = s.post(url, data=login_data, headers=headers)
         soup1=BeautifulSoup(r.content,'html.parser')
-        #print(soup1)
+        #return the soup
         return soup1
 
 def initilize_data():
@@ -98,9 +98,9 @@ def compute_data(soup1):
 
 def main():
     soup1=login_website(username,password) # username and password of the placements website in quotes.
-    #print(soup1)
+    
     temp_title,temp_dates,temp_description=compute_data(soup1)
-    print(temp_title)
+    print(temp_title) #print title from soup content
     for i in range(0,len(temp_title)):
         send_email(temp_dates[temp_title[i]],temp_title[i],temp_description[temp_title[i]])
 
@@ -108,7 +108,7 @@ if __name__=='__main__':
     import time
     i=0
     initilize_data()
-    while (1):
+    while (1)
         main()
         time.sleep(3600)   # Change this to number of seconds in a day
         if (i == 30):    # make this 30 for a month
